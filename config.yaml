@@ -1,0 +1,12 @@
+paths:
+  bars:   C:\NQBot\data\bars\NQ_minute_clean_1min_bars.feather
+  ticks:  C:\NQBot\data\ticks           # folder with your 19 tick files
+  out:    C:\NQBot\models               # where pickles & metrics go
+
+label:
+  horizon:   5          # minutes ahead
+  threshold: 0.0005     # 5 bp ≈ 0.05 %
+
+cv:
+  wtrain: 90000         # 90 k minutes ≈ 6 weeks
+  wtest:  15000         # 15 k minutes ≈ 1 week
